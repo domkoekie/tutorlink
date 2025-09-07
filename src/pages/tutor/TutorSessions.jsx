@@ -1,13 +1,37 @@
 import React from "react";
+import "cally";
 
 const TutorSessions = () => {
+  return (
+    <>
+      <div className="mb-4 mt-4">
+        <p>View your upcoming sessions</p>
+      </div>
 
-    return (
-        <div>
-            <p>View Tutor Sessions</p>
-            <p> Manage Tutor Sessions</p>
-        </div>
-    );
+      <calendar-date class="cally bg-secondary text-secondary-content border border-base-300 shadow-lg rounded-box">
+        <svg
+          aria-label="Previous"
+          className="fill-current size-4"
+          slot="previous"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path fill="currentColor" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+        </svg>
+        <svg
+          aria-label="Next"
+          className="fill-current size-4"
+          slot="next"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path fill="currentColor" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+        </svg>
+
+        <calendar-month></calendar-month>
+      </calendar-date>
+    </>
+  );
 };
 
-export default TutorSessions;  
+export default TutorSessions;
