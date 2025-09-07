@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="navbar bg-neutral text-neutral-content">
             <div className="containerWrap">
                 <button className="btn btn-ghost text-xl" onClick={() => navigate("/")}>Tutorlink</button>
-                <button className="btn btn-ghost">Logout</button>
+                <button className="btn btn-ghost" onClick={() => navigate("/")}>Logout</button>
             </div>
         </div>
     );
