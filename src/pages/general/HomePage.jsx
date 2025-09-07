@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import bgImage from "../assets/images/brian-jones-xLBNRz5Fy78-unsplash.jpg";
+import bgImage from "../../assets/images/brian-jones-xLBNRz5Fy78-unsplash.jpg";
 
 const HomePage = () => {
     const navigate = useNavigate();

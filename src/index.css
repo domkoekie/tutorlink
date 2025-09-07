@@ -4,5 +4,5 @@
 };
 
 .containerWrap {
-    @apply container mx-auto max-w-4xl flex justify-between;
+    @apply container mx-auto max-w-4xl;
 }
