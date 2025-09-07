@@ -1,2 +1,8 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: aqua --default;
+};
+
+.containerWrap {
+    @apply container mx-auto max-w-4xl flex justify-between;
+}

@@ -1,10 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+    const navigate = useNavigate();
+
     return (
-        <div>
-            <div className="navbar bg-neutral text-neutral-content">
-                <button className="btn btn-ghost text-xl">Tutorlink</button>
+        <div className="navbar bg-neutral text-neutral-content">
+            <div className="containerWrap">
+                <button className="btn btn-ghost text-xl" onClick={() => navigate("/")}>Tutorlink</button>
+                <button className="btn btn-ghost">Logout</button>
             </div>
         </div>
     );
