@@ -28,7 +28,7 @@ const HomePage = () => {
                         </div>
 
                         <div className="flex flex-col items-center mt-20">
-                            <button className="btn btn-ghost w-40" onClick={() => navigate("/about")}>
+                            <button className="btn btn-secondary-ghost w-40" onClick={() => navigate("/about")}>
                                 About Us
                             </button>
                         </div>
